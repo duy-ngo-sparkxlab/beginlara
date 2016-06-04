@@ -11486,5 +11486,97 @@ namespace {
     }
 
 
+    class GlideImage extends \Spatie\Glide\GlideImageFacade{
+        
+        /**
+         * Set the path to the image that needs to be converted.
+         *
+         * @param $sourceFile
+         * @param array $modificationParameters = []
+         * @return $this 
+         * @static 
+         */
+        public static function load($sourceFile, $modificationParameters = array()){
+            return \Spatie\Glide\GlideImage::load($sourceFile, $modificationParameters);
+        }
+        
+        /**
+         * Set the base URL.
+         *
+         * @param string $baseURL
+         * @return $this 
+         * @static 
+         */
+        public static function setBaseURL($baseURL){
+            return \Spatie\Glide\GlideImage::setBaseURL($baseURL);
+        }
+        
+        /**
+         * Set the signkey used to secure the image url.
+         *
+         * @param $signKey
+         * @return $this 
+         * @static 
+         */
+        public static function setSignKey($signKey){
+            return \Spatie\Glide\GlideImage::setSignKey($signKey);
+        }
+        
+        /**
+         * Set the modification parameters.
+         *
+         * @param array $modificationParameters
+         * @return $this 
+         * @static 
+         */
+        public static function modify($modificationParameters){
+            return \Spatie\Glide\GlideImage::modify($modificationParameters);
+        }
+        
+        /**
+         * Generate the url.
+         *
+         * @return string 
+         * @static 
+         */
+        public static function getURL(){
+            return \Spatie\Glide\GlideImage::getURL();
+        }
+        
+        /**
+         * Save the image to the given outputFile.
+         *
+         * @param $outputFile
+         * @return string the URL to the saved image
+         * @static 
+         */
+        public static function save($outputFile){
+            return \Spatie\Glide\GlideImage::save($outputFile);
+        }
+        
+        /**
+         * Cast 'w' & 'h' modificationParameters to string to fix the ctype_digit issue.
+         *
+         * @param array $modificationParameters
+         * @return array $modificationParameters
+         * @static 
+         */
+        public static function convertParametersToString($modificationParameters){
+            return \Spatie\Glide\GlideImage::convertParametersToString($modificationParameters);
+        }
+        
+        /**
+         * Use an absolute path to the sourceFile (instead of using config source).
+         *
+         * @return $this 
+         * @static 
+         */
+        public static function useAbsoluteSourceFilePath(){
+            return \Spatie\Glide\GlideImage::useAbsoluteSourceFilePath();
+        }
+        
+    }
+
+
 }
 

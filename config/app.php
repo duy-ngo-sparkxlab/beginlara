@@ -158,6 +158,7 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
+        Spatie\Glide\GlideServiceProvider::class,
 
     ],
 
@@ -205,6 +206,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'GlideImage' => Spatie\Glide\GlideImageFacade::class,
 
     ],
 
