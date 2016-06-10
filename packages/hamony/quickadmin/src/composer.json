@@ -1,0 +1,24 @@
+{
+    "name": "hamony/quickadmin",
+    "description": "Package for creating adminpanel in Laravel 5 based on quickadmin, adminlte2 and bican roles",
+    "type": "Library",
+    "require": {
+        "laravelcollective/html": "^5.2",
+        "intervention/image": "^2.3",
+        "yajra/laravel-datatables-oracle": "^6.11",
+        "bican/roles": "^2.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khoa Nguyen",
+            "email": "nguyentrananh_khoa@yahoo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "classmap": [
+      "src/Controllers",
+      "src/Cache",
+      "src/Models"
+    ]
+}

@@ -159,7 +159,8 @@ return [
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         Spatie\Glide\GlideServiceProvider::class,
-        Spatie\ResponseCache\ResponseCacheServiceProvider::class,
+//        Spatie\ResponseCache\ResponseCacheServiceProvider::class,
+        Hamony\Quickadmin\QuickadminServiceProvider::class,
 
     ],
 
@@ -208,7 +209,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'GlideImage' => Spatie\Glide\GlideImageFacade::class,
-        'ResponseCache' => Spatie\ResponseCache\ResponseCacheFacade::class,
+//        'ResponseCache' => Spatie\ResponseCache\ResponseCacheFacade::class,
 
     ],
 
